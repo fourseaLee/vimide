@@ -1,6 +1,9 @@
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
+mkdir ~/.vim
+mkdir ~/.vim/autoload
+cp plug.vim ~/.vim/autoload
 sudo apt install exuberant-ctags
 
 sudo cp vimrc /etc/vim
+
+cp ctrlp/autoload/ctrlp*     ~/.vim/autoload/ -rf
+cp ctrlp/plugin    ~/.vim/ -rf

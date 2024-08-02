@@ -4,7 +4,7 @@
 " will be overwritten everytime an upgrade of the vim packages is performed.
 " It is recommended to make changes after sourcing debian.vim since it alters
 " the value of the 'compatible' option.
-call plug#begin('/home/ubuntu/.vim/plugged')
+call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 
@@ -35,7 +35,7 @@ Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 " Unmanaged plugin (manually installed and updated)
-Plug '/home/ubuntu/my-prototype-plugin'
+Plug '~/my-prototype-plugin'
 
 " Initialize plugin system
 call plug#end()
